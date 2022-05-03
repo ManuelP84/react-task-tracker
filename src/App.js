@@ -47,7 +47,7 @@ const deleteTask = (id)=>{
 
 //Add Task
 const addTask = (task) =>{
-  const id = tasks.length + 1
+  const id = Math.floor(Math.random()*10000) + 1
   const newTask = {id, ...task}
   console.log(newTask)
   setTasks([...tasks, newTask])
